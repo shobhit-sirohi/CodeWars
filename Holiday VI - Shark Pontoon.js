@@ -23,8 +23,8 @@
 //8 kyu
 
 function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
-    if (dolphin) sharkSpeed = sharkSpeed/2
-    let sharkTime = (pontoonDistance + sharkDistance) / sharkSpeed;
+    if (dolphin) sharkSpeed = sharkSpeed/2;
+    let sharkTime = sharkDistance / sharkSpeed;
     let youTime = pontoonDistance / youSpeed;
-      return (sharkTime <= youTime ? "Shark Bait!" : "Alive!"); 
+    return (sharkTime <= youTime ? "Shark Bait!" : "Alive!"); 
     }
