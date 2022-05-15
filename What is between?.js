@@ -19,13 +19,11 @@ function between(a, b) {
   return arr;
 }
 
-
 //BETTER SOLUTION
-
 function between(a, b) {
-    arr = []
-    for(i = a;i <= b; i++){ 
-        arr.push(i)
-    }
-    return arr
+  arr = [];
+  for (i = a; i <= b; i++) {
+    arr.push(i);
   }
+  return arr;
+}
