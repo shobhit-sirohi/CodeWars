@@ -22,4 +22,7 @@
 const flip=(d, a)=>{
     if(d == "R")  return a.sort(function(g, c) {return g-c}) ;
      else if(d == "L") return a.sort(function(l, m) {return l-m }).reverse() ;
-   }
+}
+   
+// BETTER WAY
+//const flip = (d, a) => a.sort((x, y) => d === 'R' ? x - y : y - x);
