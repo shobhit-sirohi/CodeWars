@@ -6,3 +6,6 @@
 
 // 8 kyu
 
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    return dadYearsOld == sonYearsOld*2 ? 0 : Math.abs(dadYearsOld - sonYearsOld*2);
+  }
