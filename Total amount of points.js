@@ -19,4 +19,11 @@ function points(games) {
     let points= 0;
     games.map(item => item.split(":")).forEach(el => el[0]>el[1] ? points+=3 : el[0]===el[1] ? points+=1 : points+=0 )
     return points;
-   }
+}
+   
+
+// better practice
+
+// const points=games=>games.reduce((output,current)=>{
+//     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+//   },0)
