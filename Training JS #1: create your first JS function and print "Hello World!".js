@@ -2,4 +2,7 @@
 
 // 8 kyu
 
-const helloWorld = () => console.log("Hello World!");
+function helloWorld(){
+    var str ="Hello World!";
+    console.log(str);
+      }
