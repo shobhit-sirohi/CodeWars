@@ -10,3 +10,11 @@
 
 // 8 kyu
 
+function sumOfDifferences(arr) {
+    let endr =[];
+    arr.sort((a,b) => b-a);
+  for ( let i =0 ; i< arr.length-1; i++){
+    endr.push(arr[i] - arr[i+1])
+  }
+  return endr.reduce((a,b) => a+b,0);
+  }
